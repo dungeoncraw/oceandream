@@ -7,7 +7,7 @@ import { useGoogleMaps } from "react-hook-google-maps";
 
 const DreamMap = React.memo(() => {
     const { ref } = useGoogleMaps(
-        "AIzaSyB8DgJPuzsGqFaL1W7_vljyNrqK-W7RVck",
+      `${process.env.REACT_APP_PUBLIC_GOOGLE_MAPS_KEY}`,
         // NOTE: You should always set initial 'center' and 'zoom' values
         // even if you plan to change them later
         {
